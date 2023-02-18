@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+
+    }
+
+    body{
+           height:140vh ;
+           background-image: url("think.png");
+           background-attachment: fixed;
+           background-size: 40%;
+           background-repeat: no-repeat;
+           margin-top: 80px;
+
+       }
+    .container{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+
+
+    }
+    .operation{
+        display:flex;
+        flex-direction:row;
+        margin:20px;
+    }
+    .operation input{
+        margin-left: 10px;
+    }
+    form{
+        display: flex;
+        width: 67%;
+        flex-direction: column;
+        background-color: cornflowerblue;
+        align-items: center;
+        padding-top:15px;
+    }
+     .opinput{
+        margin-left: 15px;
+        height: 23px;
+
+
+    }
+
+    .btn{
+        margin: 5px;
+        display: inline;
+    }
