@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c9e9ee3b;
+}
+form{
+    display: flex;
+    height: 220px;
+    width: 300px;
+    flex-direction: column;
+    margin: 100px;
+    border: 0.5px solid grey;
+    padding: 30px;
+    border-radius: 20px;
+    background:white ;
+
+}
+.inp{
+    padding: 7px;
+    width:80%;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+}
+
+.button{
+    display: flex;
+   justify-content:flex-start;
+    text-align: center;
+    margin: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 0px;
+}
+.btn{
+    margin-right: 10px;
+    padding: 5px;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+}
+.space{
+    margin: 10px 10px 10px 0px;
+
+
+}

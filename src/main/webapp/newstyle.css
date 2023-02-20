@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+.userinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #01579b;
+}
+
+form{
+    display: flex;
+    height: 310px;
+    width: 300px;
+    flex-direction: column;
+    margin: 100px;
+    border: 0.5px solid grey;
+    padding: 30px;
+    border-radius: 20px;
+    background:white ;
+
+}
+.inp1{
+    padding: 7px;
+    width:80%;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+}
+
+.button{
+    display: flex;
+   justify-content:flex-start;
+    text-align: center;
+    margin: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 0px;
+}
+.btn1{
+    margin-right: 10px;
+    padding: 5px;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+}
+.space1{
+    margin: 10px 10px 10px 0px;
+
+
+}
+.radio{
+    margin-right: 10px;
+    padding: 5px;
+}
