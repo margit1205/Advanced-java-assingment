@@ -90,6 +90,7 @@ public class LoginServlet extends HttpServlet {
                 String query = "select * from userdetails";
                 Statement state = conn.createStatement();
                 ResultSet rset = state.executeQuery(query);
+                boolean flag=false;
                 while(rset.next()) {
                     resp.setContentType("text/html");
                     String name = rset.getString(1);
@@ -98,7 +99,7 @@ public class LoginServlet extends HttpServlet {
                     // String gender=rset.getString(4);
 
                     if (name.equals(username) && pass.equals(password)) {
-
+                        flag=true;
                         out.println("<!DOCTYPE html>");
                         out.println("<h3> Welcome to Login page</h3>");
                         out.println("<html>");
@@ -121,11 +122,13 @@ public class LoginServlet extends HttpServlet {
                         out.println("<img  src='loginimage.png' width='100%' height='100%' ");
                         out.println("</body>");
                         out.println("</html>");
+                        break;
                     }
-                    else {
-                       out.println("<h4 style='color:black;"+"align-items:center;"+"display:flex;"+"justify-content:space-around;"+"background-color:#f44336;'>"+"You are not registered"+"</h4>");
 
-                    }
+
+                }
+                if(!flag){
+                    out.println("<h4 style='color:black;"+"align-items:center;"+"display:flex;"+"justify-content:space-around;"+"background-color:#f44336;'>"+"You are not registered"+"</h4>");
 
                 }
 
